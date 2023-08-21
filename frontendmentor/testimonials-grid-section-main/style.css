@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(212, 214, 214);
+  }
+
 .parent {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -9,46 +13,41 @@
 
 .div1 {
     grid-area: 5 / 1 / 10 / 3;
-    border-radius: 10px;
-    border: 2px solid black;
-    padding: 7px;
+    border: 2px solid white;
+    background-color: white;
+
   }
   
-  
-  .profile-image {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-  }
 
 .div2 {
     grid-area: 1 / 8 / 10 / 10;
-    border-radius: 10px;
-    border: 2px solid black;
-    padding: 7px;
+    border: 2px solid white;
+    background-color: white;
 }
 
 .div3 {
     grid-area: 5 / 3 / 10 / 8;
-    border-radius: 10px;
     border: 2px solid black;
-    padding: 7px;
+    background-color: black;
+
 }
 
 .div4 {
     grid-area: 1 / 6 / 5 / 8;
-    border-radius: 10px;
-    border: 2px solid black;
-    padding: 7px;
+    border: 2px solid rgb(35, 117, 194);
+    background-color: rgb(35, 117, 194);
+
 }
 
 .div5 {
     grid-area: 1 / 1 / 5 / 6;
-    border-radius: 10px;
-    border: 2px solid black;
-    padding: 7px;
-}
+    border: 2px solid blueviolet;
+    background-color: blueviolet;
 
+}
+.div5 p,.div3 p, .div4 p{
+    color: white;
+}
 
 .big-font {
     font-weight: bold;
@@ -58,6 +57,15 @@
 .div1 p, .div2 p, .div3 p, .div4 p, .div5 p {
     margin-bottom: 0;
 }
+
+.div1 , .div2 , .div3 , .div4 , .div5  {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
 
 .title {
     font-size: 0.9em; 
@@ -99,3 +107,10 @@ grid-gap: 0px;
   gap: 20px;
   align-items: center; 
 }
+
+  
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
