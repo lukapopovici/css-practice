@@ -81,3 +81,21 @@ grid-gap: 0px;
 }
 .grid_undertitle { grid-area: 2 / 2 / 3 / 3; 
 }
+
+.parentOf2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .divOfTitle{ grid-area: 1 / 1 / 2 / 2; }
+    .divOfUnderTitle { grid-area: 2 / 1 / 3 / 2; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr; 
+  gap: 20px;
+  align-items: center; 
+}
