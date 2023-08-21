@@ -67,3 +67,17 @@
 .under-title {
     font-size: 0.8em; 
 }
+
+.presentation-parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-gap: 0px;
+}
+
+.grid_image { grid-area: 1 / 1 / 3 / 2; 
+}
+.grid_title { grid-area: 1 / 2 / 2 / 3; 
+}
+.grid_undertitle { grid-area: 2 / 2 / 3 / 3; 
+}
