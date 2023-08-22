@@ -1,5 +1,6 @@
 body {
   background-color: rgb(212, 214, 214);
+  font-family: Courier New, monospace;
 }
 
 .parent {
@@ -51,10 +52,11 @@ body {
 }
 .parent .big-font {
   font-weight: bold;
-  font-size: 1.7em;
+  font-size: 1.7em !important;
 }
 .parent .div1 p, .parent .div2 p, .parent .div3 p, .parent .div4 p, .parent .div5 p {
   margin-bottom: 0;
+  font-size: 13px;
 }
 .parent .title {
   font-size: 0.9em;

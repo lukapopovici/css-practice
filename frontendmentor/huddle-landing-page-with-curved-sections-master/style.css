@@ -139,3 +139,24 @@ button:hover {
 .grid-container > *:last-child {
   justify-self: end;
   margin-right: 20px; 
+}
+
+.bottom {
+  background-color: #070044;
+}
+
+.blue-background {
+  background-color: #e1f3f3;
+}
+
+.text-color-white p {
+  color: white;
+}
+
+.filter-to-white{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(107deg) brightness(105%) contrast(102%);
+}
+
+.hoverbutton:hover {
+  filter: invert(87%) sepia(23%) saturate(443%) hue-rotate(161deg) brightness(91%) contrast(97%);  
+}
