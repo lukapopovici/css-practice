@@ -1,5 +1,12 @@
 
-
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -56,7 +63,7 @@
 }
 
 .button-small{
-  background-color: #f03794;
+  background-color:hsl(322, 100%, 66%);
   border: none;
   color: white;
   text-align: center;
@@ -72,7 +79,7 @@
 }
 .button-pink {
   background-color: white;
-  border: 2px solid #f03794;
+  border: 2px solid hsl(322, 100%, 66%);
   color: pink;
   text-align: center;
   text-decoration: none;
@@ -88,7 +95,7 @@
   cursor: pointer;
 }
 .button-big {
-  background-color: #f03794;
+  background-color: hsl(322, 100%, 66%);
   border: none;
   color: white;
   text-align: center;
@@ -142,11 +149,11 @@ button:hover {
 }
 
 .bottom {
-  background-color: #070044;
+  background-color: hsl(192, 100%, 9%);
 }
 
 .blue-background {
-  background-color: #e1f3f3;
+  background-color:hsl(207, 100%, 98%) ;
 }
 
 .text-color-white p {
@@ -158,5 +165,13 @@ button:hover {
 }
 
 .hoverbutton:hover {
-  filter: invert(87%) sepia(23%) saturate(443%) hue-rotate(161deg) brightness(91%) contrast(97%);  
+  filter: invert(50%) sepia(23%) saturate(443%) hue-rotate(161deg) brightness(91%) contrast(97%);  
+}
+.text-wrap{
+p{
+  text-align: left !important;; 
+}
+h2{
+  text-align: left !important;;
+}
 }
