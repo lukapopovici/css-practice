@@ -71,8 +71,9 @@ class Backpack {
     }
   }
 
- 
-const capacities = {
+  //exemplul din enunt
+  /*
+  const capacities = {
   small: 8,
   medium: 4,
   big: 2
@@ -86,8 +87,10 @@ const actions: [string, string][] = [
   ["unpack", "big"],
   ["pack", "medium"]
 ];
-
-
+*/
+//empty declaration
+const capacities = {};  
+const actions: [string, string][] = [];
 //code test
 const packingService = new PackingService(capacities);
 const output = packingService.performActions(actions);
