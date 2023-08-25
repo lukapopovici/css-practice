@@ -1,7 +1,6 @@
 body {
   background-color: rgb(212, 214, 214);
-  font-family: 'Barlow Semi Condensed', sans-serif;
-  
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 .parent {
@@ -108,6 +107,22 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+
+@media (max-width: 400px) {
+  .parent {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 0;
+    grid-row-gap: 20px;
+    margin: 20px;
+  }
+  .parent .div1, .parent .div2, .parent .div3, .parent .div4, .parent .div5 {
+    grid-column: 1;
+  }
+  .parent .div1, .parent .div2, .parent .div3, .parent .div4, .parent .div5 {
+    grid-area: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
