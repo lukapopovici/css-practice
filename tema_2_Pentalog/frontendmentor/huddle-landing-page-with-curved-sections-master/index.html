@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
 </head>
@@ -27,36 +27,40 @@
       your audience. Create connections with your users as you engage in genuine discussion. </p>
     <button class="button-big">Get Started For Free</button>
     <span class="line-breaks"></span>
-    <img src="images/screen-mockups.svg"></img>
+    <img src="./images/screen-mockups.svg"></img>
   </div>
   <div class="number-container">
     <div class="left">
-      <img src="images/icon-communities.svg"></img>
+      <img src="./images/icon-communities.svg"></img>
       <h1 class="big-number">1.4k+</h1>
       <p class="small-text">Communities Formed</p>
     </div>
     <div class="right">
-      <img src="images/icon-messages.svg"></img>
+      <img src="./images/icon-messages.svg"></img>
       <h1 class="big-number">
         2.7m+</h1>
       <p class="small-text">Messages Sent</p>
     </div>
   </div>
-  <span class="line-breaks-middle"></span>
-  <section class="blue-background">
+
+  <section>
+
+    <img srcset="./images/mobile/bg-section-top-mobile-2.svg 375w,
+    ./images/desktop/bg-section-top-desktop-2.svg 1440w" sizes="(max-width: 375px) 375px,
+  1440px" src="./images/desktop/bg-section-top-desktop-2.svg" alt="Image">
     <div class="text-container">
-      <img width="550px" src="images/illustration-grow-together.svg"></img>
-
-
+      <img width="550px" src="./images/illustration-grow-together.svg"></img>
       <div class="text-wrap">
         <h2 style="color: rgb(21, 21, 180);">Grow Together</h2>
         <p class="limit-p-width" style="color: rgb(21, 21, 180);">Generate meaningful discussions with your audience and
           build a strong, loyal community.
           Think of the insightful conversations you miss out on with a feedback form. </p>
       </div>
-
     </div>
   </section>
+  <img srcset="./images/mobile/bg-section-top-mobile-1.svg 375w,
+                ./images/desktop/bg-section-top-desktop-1.svg 1440w" sizes="(max-width: 375px) 375px,
+              1440px" src="./images/desktop/bg-section-top-desktop-1.svg" alt="Image">
   <div class="text-container">
     <div class="text-wrap">
       <h2 style="color: rgb(21, 21, 180);">Your Users</h2>
@@ -65,12 +69,16 @@
         immediately.</p>
     </div>
 
-    <img width="550px" src="images/illustration-flowing-conversation.svg"></img>
+    <img width="550px" src="./images/illustration-flowing-conversation.svg"></img>
 
   </div>
-  <section class="blue-background">
+  <section>
+    <img srcset="./images/mobile/bg-section-top-mobile-1.svg 375w,
+    ./images/desktop/bg-section-top-desktop-1.svg 1440w" sizes="(max-width: 375px) 375px,
+  1440px" src="./images/desktop/bg-section-top-desktop-1.svg" alt="Image">
+
     <div class="text-container">
-      <img width="550px" src="images/illustration-your-users.svg"></img>
+      <img width="550px" src="./images/illustration-your-users.svg"></img>
       <div class="text-wrap">
         <h2 style="color: rgb(21, 21, 180);">Flowing Conversations</h2>
         <p class="limit-p-width" style="color: rgb(21, 21, 180);">You wouldn't paginate a conversation in real life, so
@@ -79,6 +87,9 @@
       </div>
 
     </div>
+    <img srcset="./images/mobile/bg-section-top-mobile-2.svg 375w,./images/desktop/bg-section-top-desktop-2.svg 1440w"
+      sizes="(max-width: 375px) 375px,
+  1440px" src="./images/desktop/bg-section-top-desktop-2.svg" alt="Image">
   </section>
   <div class="center-content">
     <h2>Ready To Build Your Community?</h2>
@@ -86,12 +97,15 @@
   </div>
   <span class="line-breaks-middle"></span>
   <section class="bottom">
-    <img src="images/desktop/bg-footer-top-desktop.svg">
+    <img src="./images/desktop/bg-section-bottom-desktop-1.svg">
+    <img srcset="./images/mobile/bg-footer-top-mobile.svg 375w,
+    ./images/desktop/bg-footer-top-desktop.svg 1440w" sizes="(max-width: 375px) 375px,1440px"
+      src="./images/desktop/bg-footer-top-desktop.svg" alt="Image">
     <div class="text-color-white">
-      <span class="line-breaks-middle"></span>
+
       <div class="text-container">
         <div>
-          <img src="images/logo.svg" class="filter-to-white">
+          <img src="./images/logo.svg" class="filter-to-white">
           <br>
           <br>
           <p class="limit-p-width">
@@ -99,19 +113,19 @@
             ultrices quis sem.</p>
 
           <p>
-            <img src="images/icon-phone.svg">
+            <img src="./images/icon-phone.svg">
             Phone: +1-543-123-4567
           </p>
           <p>
-            <img src="images/icon-email.svg">
+            <img src="./images/icon-email.svg">
             example@huddle.com
           </p>
           <br>
           <br>
           <p>
-            <img src="images/icon-email.svg" class="hoverbutton">
-            <img src="images/icon-email.svg" class="hoverbutton">
-            <img src="images/icon-email.svg" class="hoverbutton">
+            <img src="./images/icon-email.svg" class="hoverbutton">
+            <img src="./images/icon-email.svg" class="hoverbutton">
+            <img src="./images/icon-email.svg" class="hoverbutton">
           </p>
         </div>
         <div>
@@ -125,12 +139,14 @@
           </button>
         </div>
       </div>
+      <img src="./images/desktop/bg-footer-top-desktop.svg">
       <footer>
         <p class="attribution">
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
           Coded by <a href="#">lukapopovici</a>.
         </p>
       </footer>
+
     </div>
   </section>
 </body>

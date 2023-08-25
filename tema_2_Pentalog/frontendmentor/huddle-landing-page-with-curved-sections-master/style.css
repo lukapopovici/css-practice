@@ -1,4 +1,8 @@
-
+svg {
+  width: 100vw; /* 100% of viewport width */
+  height: 100vh; /* 100% of viewport height */
+  display: block; /* Make sure SVG behaves as a block element */
+}
 h1, h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
@@ -60,6 +64,15 @@ p{
   margin: 200px 70px; 
   text-align: center;
   padding: 0 20px;
+}
+@media (max-width: 375px) {
+  .text-container {
+    grid-template-columns: 1fr; 
+
+  .text-container img {
+    order: 1;
+  }
+}
 }
 
 .button-small{
