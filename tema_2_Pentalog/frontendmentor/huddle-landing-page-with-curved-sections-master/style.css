@@ -200,3 +200,9 @@ h2{
   text-align: left !important;;
 }
 }
+
+.original-size-image {
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+}
