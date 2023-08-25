@@ -1,7 +1,7 @@
 svg {
-  width: 100vw; /* 100% of viewport width */
-  height: 100vh; /* 100% of viewport height */
-  display: block; /* Make sure SVG behaves as a block element */
+  width: 100vw;
+  height: 100vh; 
+  display: block; 
 }
 h1, h2 {
   font-family: 'Poppins', sans-serif;
@@ -97,7 +97,7 @@ p{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px; /* Smaller font size */
+  font-size: 14px; 
   margin: 10px auto;
   margin-left: 50px;
   margin-top: 30px;
