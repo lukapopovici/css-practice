@@ -1,3 +1,11 @@
+@media (max-width: 768px){
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+}
 svg {
   width: 100vw;
   height: 100vh; 
@@ -24,7 +32,11 @@ p{
   justify-content: space-between;
   align-items: center;
 }
-
+@media (max-width: 375px) {
+  .number-container {
+    flex-direction: column;
+  }
+}
 .number-container .left,
 .number-container .right {
   text-align: center;
@@ -68,12 +80,12 @@ p{
 @media (max-width: 375px) {
   .text-container {
     grid-template-columns: 1fr; 
-
+  }
   .text-container img {
     order: 1;
   }
 }
-}
+
 
 .button-small{
   background-color:hsl(322, 100%, 66%);
