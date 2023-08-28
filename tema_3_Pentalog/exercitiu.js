@@ -34,31 +34,38 @@ var Backpack = /** @class */ (function () {
 }());
 //declarig the PackingService class with Backpack component
 var PackingService = /** @class */ (function () {
-    function PackingService(capacities) {
+    function PackingService(capacities, actions) {
         this.backpack = new Backpack(capacities);
         this.itemIdCounter = 1;
         this.results = [];
+        this.performActions(actions);
     }
+    PackingService.prototype.Pack = function (size) {
+        var id = this.backpack.pack(size, this.itemIdCounter);
+        this.results.push(id);
+        if (id !== -1) {
+            this.itemIdCounter++;
+        }
+    };
+    PackingService.prototype.Unpack = function (size) {
+        var id = this.backpack.unpack(size);
+        this.results.push(id);
+    };
     PackingService.prototype.performActions = function (actions) {
         for (var _i = 0, actions_1 = actions; _i < actions_1.length; _i++) {
             var action = actions_1[_i];
             var actionType = action[0], size = action[1];
             if (actionType === "pack") {
-                var id = this.backpack.pack(size, this.itemIdCounter);
-                this.results.push(id);
-                if (id !== -1) {
-                    this.itemIdCounter++;
-                }
+                this.Pack(size);
             }
             else if (actionType === "unpack") {
-                var id = this.backpack.unpack(size);
-                this.results.push(id);
+                this.Unpack(size);
             }
         }
-        return this.results;
     };
     return PackingService;
 }());
+//exemplul din enunt
 var capacities = {
     small: 8,
     medium: 4,
@@ -72,7 +79,11 @@ var actions = [
     ["unpack", "big"],
     ["pack", "medium"]
 ];
+//empty declaration
+/*
+const capacities = {};
+const actions: [string, string][] = [];
+*/
 //code test
-var packingService = new PackingService(capacities);
-var output = packingService.performActions(actions);
-console.log(output);
+var packingService = new PackingService(capacities, actions);
+console.log(packingService.results);
